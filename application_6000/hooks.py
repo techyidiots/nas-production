@@ -19,7 +19,7 @@ app_license = "Proprietary"
 # app_include_js = "/assets/application_6000/js/application_6000.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/application_6000/css/application_6000.css"
+web_include_css = "/assets/css/application_6000.web.min.css"
 # web_include_js = "/assets/application_6000/js/application_6000.js"
 
 # include js in page
