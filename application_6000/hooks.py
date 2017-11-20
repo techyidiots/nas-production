@@ -56,6 +56,8 @@ website_context = {
 	"splash_image": "/assets/application_6000/images/logokw.png"
 }
 
+brand_html = "<img src='/assets/application_6000/images/logokw.png' style='max-width: 150px;'>"
+
 # Installation
 # ------------
 
