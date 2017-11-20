@@ -1,5 +1,8 @@
 {
     "css/application_6000.web.min.css": [
-        "public/css/core.css"
+        "public/css/web.css"
+    ],
+    "css/application_6000.app.min.css": [
+        "public/css/app.css"
     ]
 }
