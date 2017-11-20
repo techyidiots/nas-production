@@ -51,6 +51,11 @@ web_include_css = "/assets/css/application_6000.web.min.css"
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
+website_context = {
+	"favicon": 	"/assets/application_6000/images/logokw.png",
+	"splash_image": "/assets/application_6000/images/logokw.png"
+}
+
 # Installation
 # ------------
 
