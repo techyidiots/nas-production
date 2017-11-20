@@ -3,3 +3,8 @@
     height: 50px;
     margin-top: -16px;
 }
+
+.splash {
+    height: auto !important;
+    width: auto !important;
+}
