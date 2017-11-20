@@ -13,6 +13,16 @@
         width: 100%;
         margin-top: 10px;
     }
+
+    .test_marker{
+        width:100px;
+        height: 100px;
+    }
+
+    .test_marker img{
+        width: 100%;
+        height: 100%;
+    }
 </style>
 <div class="contact-content">
 	{% if introduction %}
@@ -101,8 +111,8 @@
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 16,
           center: uluru,
-          gestureHandling: 'none',
-          zoomControl: false
+          //gestureHandling: 'none',
+          //zoomControl: false
         });
 
         var contentString = '<div class="test_marker" style="text-align:center" ><img src="/files/logokw.png" ' +
