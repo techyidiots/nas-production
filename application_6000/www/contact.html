@@ -1,0 +1,125 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ heading or "Contact Us"}}{% endblock %}
+
+{% block page_content %}
+<style>
+	.address {
+		line-height: 1.7em;
+	}
+</style>
+<div class="contact-content">
+	{% if introduction %}
+	<div>
+		{{ introduction or "" }}<br>
+	</div>
+	{% endif %}
+	<div class="row">
+		<div class="col-md-8">
+			<p id="contact-alert" class="alert alert-warning"
+				style="display: none;">&nbsp;</p>
+            <div class="form-group">
+				<input class="form-control" name="name" type="text"
+				placeholder="{{ _('Your Name') }}" />
+			</div>
+            <div class="form-group">
+				<input class="form-control" name="email" type="text"
+				placeholder="{{ _('Your email address') }}" />
+			</div>
+
+            <div class="form-group">
+				<input class="form-control" name="telephone" type="text"
+				placeholder="{{ _('Telephone') }}" />
+			</div>
+
+			<div class="form-group">
+				<select name="subject" class="form-control">
+				{% if query_options -%}
+					{% for option in query_options.split("\n") -%}
+					<option value="{{ option }}">{{ option }}</option>
+					{%- endfor %}
+				{% else %}
+					<option value="General">General</option>
+				{% endif %}
+				</select>
+			</div>
+			<div class="form-group">
+				<textarea rows="10" name="message" class="form-control"></textarea>
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary btn-send">{{ _("Send") }}</button>
+			</div>
+		</div>
+		{% if address_title %}
+		<div class="col-md-3 col-md-offset-1 address"
+				itemscope itemtype="http://schema.org/PostalAddress">
+			<h4 style="margin-top: 0px;"><i class="fa fa-map-marker"></i> {{ address_title }}</h4>
+			{% if address_line1 %}
+				<span itemprop="streetAddress">{{ address_line1 }}</span><br>
+			{% endif %}
+			{% if address_line2 %}
+				<span itemprop="streetAddress">{{ address_line2 }}</span><br>
+			{% endif %}
+			{% if city %}
+				<span itemprop="addressLocality">{{ city }}</span><br>
+			{% endif %}
+			{% if state %}
+				<span itemprop="addressRegion">{{ state }}</span><br>
+			{% endif %}
+			{% if pincode %}
+				<span itemprop="postalCode">{{ pincode }}</span><br>
+			{% endif %}
+			{% if country %}
+				<span itemprop="addressCountry">{{ country }}</span><br><br>
+			{% endif %}
+			{% if phone %}
+				<i class='fa fa-phone'></i> <span itemprop="telephone">{{ phone }}</span><br>
+			{% endif %}
+			{% if email_id %}
+				<i class='fa fa-envelope'></i> <span itemprop="email">{{ email_id }}</span><br>
+			{% endif %}
+			{% if skype %}
+				<i class='fa fa-skype'></i> <span itemprop="email">{{ skype }}</span><br>
+			{% endif %}
+            <div id="map"></div>
+		</div>
+		{% endif %}
+	</div>
+</div>
+<script>
+	{% include "templates/includes/contact.js" %}
+</script>
+<script>
+    function initMap() {
+        var uluru = {lat: 29.3690666, lng: 47.9641444};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru,
+          gestureHandling: 'none',
+          zoomControl: false
+        });
+
+        var contentString = '<div class="test_marker" style="text-align:center" ><img src="/files/logokw.png" ' +
+            'alt="National Assembly of Kuwait"></div>'
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: 'National Assembly Of Kuwait'
+        });
+
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+    }
+       $(document).ready(function(){
+            initMap();
+        });
+</script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+{% endblock %}
