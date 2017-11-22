@@ -1,13 +1,12 @@
-{%  if parent {
-        for k in parent
-        %}
+{%  if parent %}
+        {%  for k in parent %}
 {{ k }}
 
 
 
 {% endfor
 
-        } %}
+        endif %}
 {{ vars }}
 {{ exported_vars }}
 {{ locals }}
