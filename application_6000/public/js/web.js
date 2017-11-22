@@ -36,14 +36,16 @@ $(document).ready(function(e){
 
 
         if(href.indexOf("?")!==-1){
-            query_string = "?_lang=" + (query_params["_lang"] || "en");
-        }else{
             var splitted_query_string = href.split("?")[1];
             if(splitted_query_string){
                 splitted_query_string = splitted_query_string.split("#")[0];
-                var new_query_string = splitted_query_string.split("&");
-                query_string = frappe.utils.make_query_string(new_query_string);
+                var parms = get_query_params(splitted_query_string);
+                parms["_lang"] = (query_params["_lang"] || "en");
+
+                query_string = frappe.utils.make_query_string(parms);
             }
+        }else{
+            query_string = "?_lang=" + (query_params["_lang"] || "en");
         }
 
         if(query_string){
@@ -51,14 +53,14 @@ $(document).ready(function(e){
                 var query_split = href.split("?");
                 new_href = query_split[0] + query_string;
 
-                var hash_split = query_split.split("#");
+                var hash_split = query_split[1].split("#");
                 new_href = new_href + hash_split[1];
             }
-            else if(href.index("?")!==-1){
+            else if(href.indexOf("?")!==-1){
                 var query_split = href.split("?");
                 new_href = query_split[0] + query_string;
             }
-            else if(href.index("#")!==-1){
+            else if(href.indexOf("#")!==-1){
                 var hash_split = href.split("#");
                 new_href = hash_split[0] + query_string + hash_split[1];
             }
