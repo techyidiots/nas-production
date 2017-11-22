@@ -1,1 +1,12 @@
-DocType: Application 6000,Application 6000,Application 6000
+|||					Your application was received!|||				
+|||				    		%(name)s status was changed to : %(status)s|||				    	
+|||				%(name)s status was changed to : %(status)s|||			
+|||	    		%(name)s status was changed to : %(status)s|||	    	
+ |||					A new application is created|||					
+ |||				%(name)s status was changed to : %(status)s|||				
+A New Application : %(name)s is created
+Email Address Required 
+Email Id
+Email address
+Name is Required
+National Assembly Of Kuwait, bo bo be
