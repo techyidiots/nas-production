@@ -8,4 +8,5 @@ from frappe.utils import now
 from frappe import _
 
 def get_context(context):
-	context.main_section = "Coolest"
+    context.main_section = "Coolest"
+    context.doc.main_section = "wowx"
