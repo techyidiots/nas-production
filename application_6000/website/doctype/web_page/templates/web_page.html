@@ -1,14 +1,6 @@
-{%  if parent %}
-        {%  for k in parent %}
-{{ k }}
-
-
-
-{% endfor %}
-
-        {% endif %}
+{%  json.dumps(parent) %}
 {{ vars }}
 {{ exported_vars }}
 {{ locals }}
-{{ environment }}
+{{ json.dumps(environment) }}
 {{ globals }}
