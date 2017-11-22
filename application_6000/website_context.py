@@ -7,6 +7,15 @@ import frappe
 import jinja2
 
 def update_website_context(context):
+
+    from frappe.utils.jinja import get_jenv
+
+    jenv = get_jenv()
+
+    frappe.local.jenv.globals["get_context"] = get_context
+
+    return
+
     if frappe.local.flags.in_context_update:
         return context
 
