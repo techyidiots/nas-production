@@ -20,7 +20,7 @@ app_include_css = "/assets/css/application_6000.app.min.css"
 
 # include js, css files in header of web template
 web_include_css = "/assets/css/application_6000.web.min.css"
-# web_include_js = "/assets/application_6000/js/application_6000.js"
+web_include_js = "/assets/js/application_6000.web.min.js"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}

@@ -4,5 +4,8 @@
     ],
     "css/application_6000.app.min.css": [
         "public/css/app.css"
+    ],
+    "css/application_6000.web.min.js": [
+        "public/js/web.js"
     ]
 }
