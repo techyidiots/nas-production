@@ -1,6 +1,6 @@
 {% extends "templates/web.html" %}
 
-{% block title %}{{ heading or "Contact Us"}}{% endblock %}
+{% block title %}{{ _(heading or "Contact") }}{% endblock %}
 
 {% block page_content %}
 <style>
@@ -27,7 +27,7 @@
 <div class="contact-content">
 	{% if introduction %}
 	<div>
-		{{ introduction or "" }}<br>
+		{{ _(introduction) or "" }}<br>
 	</div>
 	{% endif %}
 	<div class="row">
@@ -52,10 +52,10 @@
 				<select name="subject" class="form-control">
 				{% if query_options -%}
 					{% for option in query_options.split("\n") -%}
-					<option value="{{ option }}">{{ option }}</option>
+					<option value="{{ option }}">{{ _(option) }}</option>
 					{%- endfor %}
 				{% else %}
-					<option value="General">General</option>
+					<option value="General">{{ _("General") }}</option>
 				{% endif %}
 				</select>
 			</div>
@@ -116,7 +116,7 @@
         });
 
         var contentString = '<div class="test_marker" style="text-align:center" ><img src="/files/logokw.png" ' +
-            'alt="National Assembly of Kuwait"></div>'
+            'alt="{{ _("National Assembly of Kuwait") }}"></div>'
 
         var infowindow = new google.maps.InfoWindow({
             content: contentString
@@ -125,7 +125,7 @@
         var marker = new google.maps.Marker({
             position: uluru,
             map: map,
-            title: 'National Assembly Of Kuwait'
+            title: '{{ _("National Assembly Of Kuwait") }}'
         });
 
         marker.addListener('click', function() {

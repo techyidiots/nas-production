@@ -7,7 +7,7 @@
 {% block page_content %}
 
 <article class="about-content">
-	{{ doc.company_introduction or """<p>Some Introduction about your company that you would
+	{{ frappe.render_template(doc.company_introduction, get_context()) or """<p>Some Introduction about your company that you would
 			like your website visitor to know.
 			More people than you think will read your About page.
 			People always like to know who the are doing business with.
