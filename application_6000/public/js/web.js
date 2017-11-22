@@ -1,6 +1,11 @@
 $(document).ready(function(e){
     $("li[data-label=Language]").find("a").on("click", function(e){
         e.preventDefault();
+
+        if($(this).parent("li").attr("data-label")==="Language"){
+            return;
+        }
+
         var language = "ar";
        if($(this).parent("li").attr("data-label") == "English"){
            language = "en"
