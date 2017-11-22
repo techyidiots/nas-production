@@ -4,6 +4,7 @@
 from __future__ import unicode_literals
 
 import frappe
+import jinja2
 
 def update_website_context(context):
     if frappe.local.flags.in_context_update:
@@ -21,4 +22,6 @@ def update_website_context(context):
 
     frappe.local.flags.in_context_update = False
 
-def set_website_language(language):
+@jinja2.contextfunction
+def get_context(c):
+    return c

@@ -59,6 +59,7 @@ website_context = {
 #update_website_context = "application_6000.website_context.update_website_context"
 
 brand_html = "<img src='/assets/application_6000/images/logokw.png' style='max-width: 150px;'>"
+jenv_filter = ["get_context:application_6000.website_context.get_context"]
 
 # Installation
 # ------------
