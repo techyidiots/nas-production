@@ -13,10 +13,12 @@ def update_website_context(context):
 
     from frappe.website.doctype.website_settings.website_settings import get_website_settings
 
-    query_strings = frappe.local.request.args
+    cookie_manager = frappe.request.cookies
 
-    frappe.local.lang =  query_strings and query_strings.get("lang", "en")
+    frappe.local.lang =  cookie_manager and cookie_manager.get("lang", "en")
 
     context.update(get_website_settings())
 
     frappe.local.flags.in_context_update = False
+
+def set_website_language(language):
