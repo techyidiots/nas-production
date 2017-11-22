@@ -1,5 +1,5 @@
 <li data-label='{{ page.label }}' {% if page.child_items %} class="dropdown dropdown-submenu"{% endif %}>
-	<a {% if not page.child_items -%} href="{{ (page.url or '')|abs_url }}{{ local.request.args.get("_lang") and "?_lang=" + local.request.args.get("_lang") }}" {%- endif %}
+	<a {% if not page.child_items -%} href="{{ (page.url or '')|abs_url }}{{ frappe.local.request.args.get("_lang") and "?_lang=" + frappe.local.request.args.get("_lang") }}" {%- endif %}
 		{% if page.child_items %} class="dropdown-toggle" onclick="return false;" data-toggle="dropdown"{% endif %}
 		{{ page.target or ''}}>
 	{{ _(page.label) }}
@@ -10,7 +10,7 @@
 		{%- for child in page.child_items -%}
 			<li data-label='{{ _(child.label) }}'>
 				<a {% if child.indent %} style="padding-left: {{((child.indent|int)+1)*15 }}px"{% endif %}
-					href="{{ child.url | abs_url }}{{ local.request.args.get("_lang") and "?_lang=" + local.request.args.get("_lang") }}" {{ child.target or '' }}>{{ _(child.label) }}</a>
+					href="{{ child.url | abs_url }}{{ frappe.local.request.args.get("_lang") and "?_lang=" + frappe.local.request.args.get("_lang") }}" {{ child.target or '' }}>{{ _(child.label) }}</a>
 			</li>
 		{%- endfor -%}
 		</ul>
