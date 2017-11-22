@@ -5,7 +5,7 @@
     "css/application_6000.app.min.css": [
         "public/css/app.css"
     ],
-    "css/application_6000.web.min.js": [
+    "js/application_6000.web.min.js": [
         "public/js/web.js",
         "public/js/uri.js"
     ]

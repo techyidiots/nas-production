@@ -19,7 +19,54 @@ $(document).ready(function(e){
        window.location = new_url;
     });
 
+    var query_params = frappe.utils.get_query_params();
+
     $("a").each(function(){
+        if(!query_params["_lang"])
+            return false;
+
+        var href= $(this).attr("href");
+
+        if(!href){
+            return;
+        }
+
+        var new_href = "";
+        var query_string = ""
+
+
+        if(href.indexOf("?")!==-1){
+            query_string = "?_lang=" + (query_params["_lang"] || "en");
+        }else{
+            var splitted_query_string = href.split("?")[1];
+            if(splitted_query_string){
+                splitted_query_string = splitted_query_string.split("#")[0];
+                var new_query_string = splitted_query_string.split("&");
+                query_string = frappe.utils.make_query_string(new_query_string);
+            }
+        }
+
+        if(query_string){
+            if(href.indexOf("?")!==-1 && href.indexOf("#")!==-1){
+                var query_split = href.split("?");
+                new_href = query_split[0] + query_string;
+
+                var hash_split = query_split.split("#");
+                new_href = new_href + hash_split[1];
+            }
+            else if(href.index("?")!==-1){
+                var query_split = href.split("?");
+                new_href = query_split[0] + query_string;
+            }
+            else if(href.index("#")!==-1){
+                var hash_split = href.split("#");
+                new_href = hash_split[0] + query_string + hash_split[1];
+            }
+            else{
+                new_href = href+query_string;
+            }
+            $(this).attr("href", new_href);
+        }
 
     });
 });
