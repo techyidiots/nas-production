@@ -25,3 +25,6 @@ def update_website_context(context):
 @jinja2.contextfunction
 def get_context(c):
     return c
+
+def callx():
+    return callable
