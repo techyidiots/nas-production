@@ -6,7 +6,6 @@
         "public/css/app.css"
     ],
     "js/application_6000.web.min.js": [
-        "public/js/web.js",
-        "public/js/uri.js"
+        "public/js/web.js"
     ]
 }
