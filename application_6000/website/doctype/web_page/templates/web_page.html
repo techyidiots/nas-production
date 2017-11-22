@@ -1,6 +1,6 @@
-{%  json.dumps(parent) %}
+{%  parent %}
 {{ vars }}
 {{ exported_vars }}
 {{ locals }}
-{{ json.dumps(environment) }}
+{{ environment.context_class }}
 {{ globals }}
