@@ -1,0 +1,28 @@
+[
+ {
+  "apply_style": 1, 
+  "apply_text_styles": 0, 
+  "background_color": null, 
+  "background_image": "/files/kna_main_bg.png", 
+  "bootstrap": null, 
+  "css": "body {\n  background-attachment: fixed;\n  background-size: cover;\n  overflow-x: hidden;\n  width: 100%;\n background-color: #ffffff;\n}\nheader {\n  border-bottom: 5px solid #2b955a;\n}\n.about-content .pull-left img {\n  padding-right: 30px;\n}\np {\n  color: #606060;\n}\n\n.page-container { \n  max-width: 100%;\n  width: 100%;\n}\n.bootcards-summary-item:hover .icon img {\n  background: #333333;\n}\n.navbar-brand img {\n  height: auto;\n  max-width: 200px !important;\n  width: 190px;\n}\n.navbar-brand {\n  padding: 0;\n}\n.navbar-default .navbar-nav > li > a {\n  font-size: 16px;\n}\n.nav > li {\n  margin-top: 80px;\n}\n\n/*----------------*/\n\na:hover {\n  text-decoration: none;\n}\n.carousel-control {\n  display: none;\n}\n.footer_logo img {\n  border: 10px solid #eee;\n  border-radius: 10px;\n  margin: 0 auto 30px;\n  width: 250px;\n}\n.footer_social > ul {\n  padding: 0 0 15px;\n  text-align: center;\n}\n.footer_social li {\n  display: inline-block;\n  list-style-type: none;\n  margin: 0 6px;\n}\n.footer_social a {\n  border: 1px solid #fff;\n  border-radius: 50%;\n  color: #fff;\n  display: block;\n  font-size: 20px;\n  height: 40px;\n  line-height: 35px;\n  text-align: center;\n  width: 40px;\n}\n.footer_social a:hover {\n  background: #ffffff;\n}\n\n.footer-bottom-line .text-muted.small {\n  font-size: 0;\n}\n.small .footer_sec p {\n  color: #ffffff;\n  font-size: 15px;\n}\n.footer-powered a {\n  font-size: 15px;\n}\n.footer-powered a {\n  color: #ffffff !important;\n  font-size: 15px;\n}\n\n.footer-bottom-line {\n  margin-top: 0;\n}\n.web-footer {\n  background-color: #333333;\n  border-top: 1px solid #e6e6e6;\n  padding: 30px 0;\n}\n.footer-bottom-line .col-sm-6 {\n  text-align: center;\n  width: 100%;\n}\n.web-sidebar .sidebar-item a {\n  color: #222;\n  font-size: 18px;\n  font-weight: 600;\n}\n.page-content.with-sidebar {\n  background: #ffffff none repeat scroll 0 0;\n}\n.form-control {\n  height: 38px;\n}\n.btn, .btn:hover, .btn:active, .btn:focus {\n  background: #229a4e none repeat scroll 0 0;\n  border: 1px solid #229a4e;\n  font-size: 15px;\n  font-weight: 600;\n  padding: 5px 30px;\n  text-transform: uppercase;\n  color: #ffffff;\n}\n\np {\n  font-size: 15px;\n  line-height: 30px;\n}\n.page-head h1 {\n  font-weight: 600;\n}\n\n.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {\n  background-color: #EC1A28;\n}\n.contact-content h4 {\n  font-size: 20px;\n  font-weight: 600;\n}\n \n.navbar-header .dropdown .btn {\n  margin: 80px 20px 0 0;\n  padding: 6px 12px;\n}\n.img_gallery {\n  margin-bottom: 30px;\n}\n.page-content h1:first-child {\n  color: #2b955a;\n}\n\n\n\n", 
+  "custom": 1, 
+  "docstatus": 0, 
+  "doctype": "Website Theme", 
+  "font_size": "", 
+  "footer_color": null, 
+  "footer_text_color": null, 
+  "heading_style": "", 
+  "heading_webfont": null, 
+  "js": null, 
+  "link_color": null, 
+  "modified": "2017-12-02 13:05:51.646943", 
+  "module": "Website", 
+  "name": "KNA-Theme", 
+  "text_color": null, 
+  "text_webfont": null, 
+  "theme": "KNA-Theme", 
+  "top_bar_color": null, 
+  "top_bar_text_color": null
+ }
+]
