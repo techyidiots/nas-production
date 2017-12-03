@@ -45,6 +45,56 @@ web_include_js = "/assets/js/application_6000.web.min.js"
 # Website user home page (by function)
 # get_website_user_home_page = "application_6000.utils.get_home_page"
 
+# Fixtures
+# -------
+fixtures = [
+    {
+        "doctype": "Web Form",
+        "filters": {
+            "name": [
+                "in", [
+                    "6000"
+                ]
+            ]
+        }
+    },
+    {
+        "doctype": "Web Page",
+        "filters": {
+            "name": [
+                "in", [
+                    "home-page"
+                ]
+            ]
+        }
+    },
+    {
+        "doctype": "Website Theme",
+        "filters": {
+            "name": [
+                "in", [
+                    "KNA-Theme"
+                ]
+            ]
+        }
+    },
+    "Website Settings",
+	"About Us Settings",
+	"Contact Us Settings",
+    {
+        "doctype": "Email Account",
+        "filters": {
+            "name": [
+                "in", [
+                    "Notifications"
+                ]
+            ]
+        }
+    },
+	"Desktop Icon"
+
+]
+
 # Generators
 # ----------
 
