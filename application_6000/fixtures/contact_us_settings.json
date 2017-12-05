@@ -1,0 +1,22 @@
+[
+ {
+  "address_line1": "Some Address", 
+  "address_line2": null, 
+  "address_title": "MOI", 
+  "city": null, 
+  "country": "Kuwait", 
+  "docstatus": 0, 
+  "doctype": "Contact Us Settings", 
+  "email_id": null, 
+  "forward_to_email": "sdqadeer44@gmail.com", 
+  "heading": "", 
+  "introduction": "<div><strong><br></strong></div>", 
+  "modified": "2017-11-28 10:23:00.267656", 
+  "name": "Contact Us Settings", 
+  "phone": "123456790", 
+  "pincode": null, 
+  "query_options": null, 
+  "skype": null, 
+  "state": "State name"
+ }
+]

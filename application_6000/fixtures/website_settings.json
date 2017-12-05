@@ -1,0 +1,63 @@
+[
+ {
+  "address": "<br><div class=\"footer_sec text-center\">    <div class=\"footer_wrapper\">        <div class=\"row\">            <div class=\"footer_logo col-md-12\"><a href=\"/\"><img src=\"/files/logokw.png\" alt=\"logo\"></a></div>\n\n            <div class=\"footer_social col-md-12\">                <ul>\n                    <li><a href=\"https://www.facebook.com/pages/National-Assembly-Kuwait/194002554010450\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a></li>\n                    <li><a href=\"https://twitter.com/majlesalommah\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a></li>\n                    <li><a href=\"https://www.instagram.com/majlesalommah/\" target=\"_blank\"><i class=\"fa fa-instagram\"></i></a></li>\n                    <li><a href=\"http://www.youtube.com/user/AlOmmahMajles\" target=\"_blank\"><i class=\"fa fa-youtube\"></i></a></li>\n                    <li><a href=\"http://www.kna.kw/clt-html5/rss2.asp\" target=\"_blank\"><i class=\"fa fa-rss\"></i></a></li>\n                </ul>\n\n<p>\u00a9 National Assembly of Kuwait</p>\n\n            </div>\n\n        </div>\n\n    </div>\n\n</div>", 
+  "banner_html": null, 
+  "banner_image": null, 
+  "brand_html": "<img src=\"/files/logokw.png\" alt=\"logo\">", 
+  "copyright": "National Assembly of Kuwait", 
+  "disable_signup": 1, 
+  "docstatus": 0, 
+  "doctype": "Website Settings", 
+  "favicon": "/files/favicon.png", 
+  "footer_items": [], 
+  "google_analytics_id": null, 
+  "head_html": null, 
+  "hide_footer_signup": 0, 
+  "home_page": "home", 
+  "modified": "2017-12-03 12:05:58.890491", 
+  "name": "Website Settings", 
+  "navbar_search": 0, 
+  "robots_txt": null, 
+  "subdomain": null, 
+  "title_prefix": null, 
+  "top_bar_items": [
+   {
+    "label": "English", 
+    "parent_label": "", 
+    "right": 1, 
+    "target": "", 
+    "url": "/?_lang=en"
+   }, 
+   {
+    "label": "Arabic", 
+    "parent_label": "", 
+    "right": 1, 
+    "target": "", 
+    "url": "/?_lang=ar"
+   }, 
+   {
+    "label": "6000", 
+    "parent_label": "", 
+    "right": 1, 
+    "target": "", 
+    "url": "6000"
+   }, 
+   {
+    "label": "About", 
+    "parent_label": null, 
+    "right": 1, 
+    "target": "", 
+    "url": "about"
+   }, 
+   {
+    "label": "Contact", 
+    "parent_label": null, 
+    "right": 1, 
+    "target": "", 
+    "url": "contact"
+   }
+  ], 
+  "website_theme": "KNA-Theme", 
+  "website_theme_image_link": null
+ }
+]
