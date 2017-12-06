@@ -2,7 +2,7 @@
  {
   "address": "<br><div class=\"footer_sec text-center\">    <div class=\"footer_wrapper\">        <div class=\"row\">            <div class=\"footer_logo col-md-12\"><a href=\"/\"><img src=\"/files/logokw.png\" alt=\"logo\"></a></div>\n\n            <div class=\"footer_social col-md-12\">                <ul>\n                    <li><a href=\"https://www.facebook.com/pages/National-Assembly-Kuwait/194002554010450\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a></li>\n                    <li><a href=\"https://twitter.com/majlesalommah\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a></li>\n                    <li><a href=\"https://www.instagram.com/majlesalommah/\" target=\"_blank\"><i class=\"fa fa-instagram\"></i></a></li>\n                    <li><a href=\"http://www.youtube.com/user/AlOmmahMajles\" target=\"_blank\"><i class=\"fa fa-youtube\"></i></a></li>\n                    <li><a href=\"http://www.kna.kw/clt-html5/rss2.asp\" target=\"_blank\"><i class=\"fa fa-rss\"></i></a></li>\n                </ul>\n\n<p>\u00a9 National Assembly of Kuwait</p>\n\n            </div>\n\n        </div>\n\n    </div>\n\n</div>", 
   "banner_html": null, 
-  "banner_image": null, 
+  "banner_image": "/private/files/\u0627\u0644\u0634\u0639\u0627\u0631_\u0627\u0644\u062c\u062f\u064a\u062f.jpg", 
   "brand_html": "<img src=\"/files/logokw.png\" alt=\"logo\">", 
   "copyright": "National Assembly of Kuwait", 
   "disable_signup": 1, 
@@ -14,7 +14,7 @@
   "head_html": null, 
   "hide_footer_signup": 0, 
   "home_page": "home", 
-  "modified": "2017-12-03 12:05:58.890491", 
+  "modified": "2017-12-05 14:11:55.261090", 
   "name": "Website Settings", 
   "navbar_search": 0, 
   "robots_txt": null, 
