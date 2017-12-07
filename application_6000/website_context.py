@@ -10,6 +10,9 @@ def update_website_context(context):
 
     from frappe.utils.jinja import get_jenv
 
+    if not frappe.form_dict._lang:
+        frappe.local.flags.redirect_location = frappe.local.request.path + "?" + "&".join(frappe.form_dict) + "&_lang=ar"
+        raise frappe.Redirect
     jenv = get_jenv()
 
     frappe.local.jenv.globals["get_context"] = get_context
