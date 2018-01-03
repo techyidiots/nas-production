@@ -19,7 +19,7 @@
   "is_standard": 0, 
   "login_required": 0, 
   "max_attachment_size": 0, 
-  "modified": "2017-12-06 13:02:54.164754", 
+  "modified": "2018-01-03 16:18:56.187590", 
   "module": "Desk", 
   "name": "6000", 
   "payment_button_help": null, 
@@ -72,19 +72,6 @@
     "options": null, 
     "read_only": 0, 
     "reqd": 0
-   }, 
-   {
-    "default": null, 
-    "description": null, 
-    "fieldname": "date", 
-    "fieldtype": "Date", 
-    "hidden": 0, 
-    "label": "Date", 
-    "max_length": 0, 
-    "max_value": 0, 
-    "options": null, 
-    "read_only": 0, 
-    "reqd": 1
    }, 
    {
     "default": null, 
