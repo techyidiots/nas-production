@@ -80,17 +80,17 @@ fixtures = [
     },
     "Website Settings",
 	"About Us Settings",
-	"Contact Us Settings",
-    {
-        "doctype": "Email Account",
-        "filters": {
-            "name": [
-                "in", [
-                    "Notifications"
-                ]
-            ]
-        }
-    }
+	#"Contact Us Settings",
+    #{
+    #    "doctype": "Email Account",
+    #    "filters": {
+    #        "name": [
+    #            "in", [
+    #                "Notifications"
+    #            ]
+    #        ]
+    #    }
+    #}
 
 ]
 
